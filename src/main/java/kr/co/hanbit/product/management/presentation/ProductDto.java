@@ -1,17 +1,21 @@
-package kr.co.hanbit.product.management;
+package kr.co.hanbit.product.management.presentation;
 
-public class Product {
+public class ProductDto {
     private Long id;
     private String name;
     private Integer price;
     private Integer amount;
 
-    public String getName() {
-        return name;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Long getId() {
         return id;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public Integer getPrice() {
